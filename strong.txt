@@ -1,0 +1,17 @@
+def fact(n):
+    if n==0 or n==1:
+        return 1
+    return n*fact(n-1)
+def strong(n1,l):
+    x=0
+    for j in range(l):
+        x+=fact(int(n1[j]))
+    return x
+n1=input()
+l=len(n1)
+n=int(n1)
+res=strong(n1,l)
+if res==n:
+    print("IT'S STRONG")
+else:
+    print("NOOOOOOO")

@@ -1,0 +1,13 @@
+def palindrome(f):
+    ans=0
+    while f!=0:
+        x=f%10
+        ans=ans*10+x
+        f//=10
+    return ans
+n=int(input())
+result=palindrome(n)
+if result==n:
+    print("YOOOOO IT'S A PALINDROME")
+else:
+    print("OOOOOOPS MAN!!!!!!!!")

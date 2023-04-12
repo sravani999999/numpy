@@ -1,0 +1,10 @@
+n=int(input())
+a=[]
+for i in range(2,n):
+    if n%i==0:
+        a.append(i)
+s=sum(a)+1
+if n==s:
+    print("PERFECTOOOOOO")
+else:
+    print("NOT PERFF")

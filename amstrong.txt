@@ -1,0 +1,12 @@
+def amstrong(n):
+    l=len(n)
+    s=0
+    for i in range(l):
+        s+=int(n[i])**l
+    return s
+n=input()
+res=amstrong(n)
+if int(n)== res:
+    print("YOOOOOOO IT'S AMSTRONG NUM!!")
+else:
+    print("OOP'S MAN!")
